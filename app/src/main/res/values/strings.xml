@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AppTestTMBD</string>
+    <string name="wait">Espere por favor</string>
+    <string name="msgWelcome">Bienvenido %1$s</string>
+    <string name="error_get_movies">Error al recuperar las películas</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="logout_q">¿Desea salir de la aplicación?</string>
+    <string name="error_get_detail_movie">Error al recuperar el detalle de la película</string>
+    <string name="req_user_pass">Se requiere usuario y contraseña</string>
+    <string name="login_error">Datos de acceso incorrectos</string>
+
+
+    <string name="facebook_app_id">1822793498138881</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">56789</string>
+
+
+</resources>

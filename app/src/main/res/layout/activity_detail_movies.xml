@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ui.activity.detailmovies.DetailMoviesActivity">
+
+<RatingBar
+    android:id="@+id/ratingBar"
+    style="?android:attr/ratingBarStyleIndicator"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:max="10"
+    android:numStars="10"
+    android:rating="0"
+    android:scaleX=".5"
+    android:scaleY=".5"
+    android:transformPivotX="0dp"
+    android:transformPivotY="0dp"
+    android:padding="10dp"
+    app:layout_constraintEnd_toStartOf="@+id/switch1"
+    app:layout_constraintTop_toTopOf="@+id/switch1" />
+
+<ImageView
+    android:id="@+id/imageViewCover"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/ic_baseline_local_movies_24" />
+
+<TextView
+    android:id="@+id/textViewTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:text=""
+    android:textSize="30dp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/imageViewCover" />
+
+<TextView
+    android:id="@+id/textViewDuracion"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
+    android:text="0 min"
+    android:layout_marginTop="10dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+<TextView
+    android:id="@+id/textViewFechaEstreno"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="5dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textViewDuracion" />
+
+<TextView
+    android:id="@+id/textViewDescripcion"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:layout_marginTop="45dp"
+    android:padding="10dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+<Switch
+    android:id="@+id/switch1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Adulto"
+    android:enabled="false"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textViewDescripcion" />
+
+<TextView
+    android:id="@+id/textViewGeneros"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textStyle="italic|bold"
+    android:padding="10dp"
+    android:layout_marginTop="25dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textViewDescripcion" />
+
+<ImageView
+    android:id="@+id/imageView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toStartOf="@+id/textViewDuracion"
+    app:layout_constraintTop_toTopOf="@+id/textViewDuracion"
+    app:srcCompat="@drawable/ic_baseline_access_time_24" />
+
+<ImageView
+    android:id="@+id/imageView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toStartOf="@+id/textViewFechaEstreno"
+    app:layout_constraintTop_toBottomOf="@+id/textViewDuracion"
+    app:srcCompat="@drawable/ic_baseline_date_range_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

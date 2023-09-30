@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/lblTitleDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/bluemain"
+            android:layout_marginStart="27sp"
+            android:paddingTop="5dp"
+            android:text="TituloDialogo"></TextView>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/yellow"
+            app:layout_constraintTop_toBottomOf="@+id/lblTitleDialog"/>
+
+        <TextView
+            android:id="@+id/lblQuestionDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXXXX"
+            android:textColor="@color/bluedown"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="50sp"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblTitleDialog"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/lblQuestionDialog"
+            android:layout_marginTop="50dp"
+            android:paddingBottom="5dp"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_no_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:padding="15dp"
+                    android:text="NO"
+                    android:visibility="visible"
+                    android:layout_marginStart="20dp"
+
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" android:gravity="center">
+                <Button
+                    android:id="@+id/btn_yes_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:text="OK"
+                    android:textColor="@color/white"
+                    ></Button>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
