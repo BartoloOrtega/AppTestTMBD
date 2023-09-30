@@ -7,4 +7,7 @@ App test que consume el servicio themoviedb en Android Kotlin
 <li>Cierre de sesión<br>
 <br>
 
+<img src="img_152726.png" width="200" height="400"/>
 <img src="img_152542.png" width="200" height="400"/>
+<img src="img_152623.png" width="200" height="400"/>
+
